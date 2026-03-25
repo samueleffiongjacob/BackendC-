@@ -1,0 +1,17 @@
+http://localhost:5276/
+
+###
+GET http://localhost:5276/download
+
+###
+GET http://localhost:5276/time
+
+###
+GET http://localhost:5276/greet/Samuel
+
+### 
+PUT http://localhost:5276/
+###
+DELETE http://localhost:5276/delete
+###
+POST http://localhost:5276/
