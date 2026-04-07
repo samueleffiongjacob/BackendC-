@@ -1,0 +1,7 @@
+Configure Logging In Asp>net Core Project 
+  Define Log Output location 
+  set log levels
+  configure in appsetings.json or program.cs
+  install third-party frameworks(optional)
+  create and save logs
+  test and monitor logging

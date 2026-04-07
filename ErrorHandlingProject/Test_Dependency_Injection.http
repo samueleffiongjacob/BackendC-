@@ -1,0 +1,6 @@
+@Test_Dependency_Injection_HostAddress = http://localhost:5233
+
+GET {{Test_Dependency_Injection_HostAddress}}/api/ErrorHandling/division?numerator=10&denominator=1
+Accept: application/json
+
+###
