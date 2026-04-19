@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserName>Samuel Effiong</UserName>
+  <UserEmail>samuel.effiong@example.com</UserEmail>
+  <UserPhone>123-456-7890</UserPhone>
+  <UserAddress>13 Adeniyi Street, Abuja, Nigeria</UserAddress>
+  <UserAge>30</UserAge>
+</Person>

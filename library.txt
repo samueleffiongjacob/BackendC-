@@ -1,0 +1,17 @@
+serilog
+nlog
+
+Serialization: The Process of converting an object into a format that can be easily stored or transmitted
+case:
+  Persisting data files: json etc
+  Sending Objects Over the network: json
+  Caching is a technique for storing frequently accessed data in memory
+
+Serialization Techniques
+  Json Serialization
+  xml Serialization
+  Binary Serialization
+which Type is Best for web:
+  Json Serialization : best
+  xml Serialization
+  Binary Serialization

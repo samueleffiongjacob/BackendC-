@@ -1,0 +1,45 @@
+@CollectDataWeblab_HostAddress = http://localhost:5227
+
+### Health
+GET {{CollectDataWeblab_HostAddress}}/
+Accept: application/json
+
+### Create User 1
+POST {{CollectDataWeblab_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace",
+  "email": "ada@example.com",
+  "age": 28
+}
+
+### Create User 2
+POST {{CollectDataWeblab_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  "name": "Alan Turing",
+  "email": "alan@example.com",
+  "age": 32
+}
+
+### List Users
+GET {{CollectDataWeblab_HostAddress}}/api/user
+Accept: application/json
+
+### Export Users as JSON
+GET {{CollectDataWeblab_HostAddress}}/api/users/export/json
+Accept: application/json
+
+### Export Users as XML
+GET {{CollectDataWeblab_HostAddress}}/api/users/export/xml
+Accept: application/xml
+
+### Export Users as DAT
+GET {{CollectDataWeblab_HostAddress}}/api/users/export/dat
+Accept: application/octet-stream
+
+### Export Users as Binary
+GET {{CollectDataWeblab_HostAddress}}/api/users/export/binary
+Accept: application/octet-stream

@@ -1,0 +1,24 @@
+@Web_Serialization_HostAddress = http://localhost:5084
+
+GET {{Web_Serialization_HostAddress}}/
+Accept: application/json
+###
+GET {{Web_Serialization_HostAddress}}/person
+Accept: application/json
+###
+GET {{Web_Serialization_HostAddress}}/manual-json
+Accept: application/json
+###
+GET {{Web_Serialization_HostAddress}}/custom-serializer
+Accept: application/json
+###
+GET {{Web_Serialization_HostAddress}}/me
+Accept: application/json
+
+###
+GET {{Web_Serialization_HostAddress}}/auto
+Accept: application/json
+
+### 
+GET {{Web_Serialization_HostAddress}}/xml
+Accept: application/json
