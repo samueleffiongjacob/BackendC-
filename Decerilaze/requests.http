@@ -1,0 +1,52 @@
+@Decerilaze_HostAddress = http://localhost:5035
+
+### Health check
+GET {{Decerilaze_HostAddress}}/
+Accept: application/json
+
+### Auto Deserialization
+POST {{Decerilaze_HostAddress}}/auto
+Content-Type: application/json
+
+{
+  "userName": "Ada Lovelace",
+  "userAge": 28
+}
+
+### Manual JSON Deserialization
+POST {{Decerilaze_HostAddress}}/json
+Content-Type: application/json
+
+{
+  "userName": "Alan Turing",
+  "userAge": 35
+}
+
+### Custom JSON Deserialization with Options
+POST {{Decerilaze_HostAddress}}/custom-options
+Content-Type: application/json
+
+{
+  "userName": "Grace Hopper",
+  "userAge": 42,
+  "extraField": "will be rejected by UnmappedMemberHandling"
+}
+
+### Custom JSON with Trailing Commas (allowed)
+POST {{Decerilaze_HostAddress}}/custom-options
+Content-Type: application/json
+
+{
+  "userName": "Donald Knuth",
+  "userAge": 50,
+}
+
+### XML Deserialization
+POST {{Decerilaze_HostAddress}}/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<Person>
+  <UserName>Linus Torvalds</UserName>
+  <UserAge>54</UserAge>
+</Person>
