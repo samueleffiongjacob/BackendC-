@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NSwag.CodeGeneration.CSharp" Version="14.7.1" />
+    <PackageReference Include="NSwag.Core" Version="14.7.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+  </ItemGroup>
+
 </Project>
